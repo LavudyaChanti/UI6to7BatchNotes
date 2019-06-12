@@ -1,0 +1,39 @@
+<html>
+    <head>
+            <script>
+                   function fun2(temp)
+                   {
+                    temp.style.color='blue'
+                   }
+            </script>
+    </head>
+<body>
+   
+
+    <h1>Hello1 </h1>
+    <script>
+            document.querySelector('h1').style.color='green'
+    </script>
+
+
+
+    <h2 onclick="fun2(this)">Hello2 </h2>
+
+    <h3 onclick="fun1(this)">Hello3 </h3>
+    
+     
+
+     <script>
+         function fun1(temp)
+         {
+            temp.style.color='Orange'
+         }
+     </script>
+
+     <h4 class="x">DEMO</h4>
+     <script>
+            v=document.querySelectorAll('.x')
+            v[0].style.color='gold'
+    </script>
+</body>
+</html>

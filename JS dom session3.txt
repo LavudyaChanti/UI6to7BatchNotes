@@ -1,0 +1,75 @@
+Document Object Model Manipulation:
+=================================
+We have 3 methods to perform DOM Manipulations.
+1.getElementById() method:
+2.querySelector():
+3.querySelectorAll():
+________________________________________________________________________
+Events:
+======
+Types of events:
+-----------------------
+1.Mouse Related events
+2.Key related events
+3.Focus related events
+4.Form related events
+5.Other events
+
+1.Mouse Related events:
+=====================
+1.onclick()		:Triggered when user single click on item
+2.ondblclick()		:Triggered when user double click on item
+3.onmouseenter()		:Triggered when user enter into item
+4.onmouseleave()		:Triggered when user leave into item
+5.onmouseover()		:Triggered when user move mouse cursor into item
+6.onmousemove()		:Triggered when user move mouse cursor into item
+7.onmouseout()		:Triggered when user leave mouse cursor from item
+
+this:
+-------
+	Represent current item/tag
+Example:	eventex3.html
+
+querySelectorAll()  	code:eventex4.html
+
+dom manipulation with & without events	:eventex5.html
+
+2.Key related events:
+==================
+1.onkeyup()	:fired when the user releases a key (on the keyboard).
+2.onkeydown()	:fired when the user is pressing a key (on the keyboard).
+3.onkeypress()	:fired when the user presses a key (on the keyboard).
+
+	:eventex6.html
+
+3.Focus related events:
+====================
+1.onfocus()	:fired when user entering into item
+2.onblur()		:fired when user leaving from item
+
+	:eventex7.html
+
+4.Form related events:
+====================
+1.onsubmit	:fired when user click on submit button
+2.onreset		:fired when user click on reset button.
+
+Note:
+--------
+1.Form events must return boolean values(true/false)
+2.onsubmit event must return true then only form data submitted to form action
+3.onreset event must return true then only form datais erased
+
+	:eventex8.html
+
+
+
+
+
+
+
+
+
+
+
+
