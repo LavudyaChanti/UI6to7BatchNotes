@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+      //approach1:using alert msg
+      function fun1()
+      {
+          var data=document.getElementById('id1').value
+          if(data=="")
+          {
+              alert('Please fill ur name')
+              return false
+          }
+          else
+          {
+            alert(data+' is accepted')
+            return true
+          }
+      }
+</script>
+</head>
+<body>
+    <form action="result.html" onsubmit="return fun1()">
+        Name:<input type="text" id="id1">      <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

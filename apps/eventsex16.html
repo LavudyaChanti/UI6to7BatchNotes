@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+      function sum()
+      {
+          var p1=document.getElementById('n1').value
+          var p2=document.getElementById('n2').value
+          var res=eval(p1)+eval(p2)
+          document.getElementById('n3').value=res
+      }
+     
+</script>
+</head>
+<body>
+   Number1:<input type="number" id="n1">    <br><br>
+   Number2:<input type="number" id="n2">    <br><br>
+   <button onclick="sum()">+</button>     <br><br>
+   Result:<input type="number" id="n3">    <br> 
+</body>
+</html>

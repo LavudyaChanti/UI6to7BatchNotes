@@ -1,0 +1,63 @@
+Events:
+======
+Types of events:
+-----------------------
+1.Mouse Related events
+2.Key related events
+3.Focus related events
+4.Form related events
+5.Other events
+	->onload		->Fired when <body> tag loaded into browser
+		eventex9.html
+	->onchange	->Fired when user select item from dropdownbox
+		eventex10.html
+	->onunload	->Fired when user waiting data to be loaded into browser
+	->oncopy		->Fired when user try to copy data
+	->onselect	->Fired when user try to select data
+	->oncut		->Fired when user try to cut data
+	etc
+
+Validations:
+==========
+Def:	Checking proper entry of data at browser level is called validations
+Ex:
+	textbox is filled or not
+	pswd & confirm pswd are matced or not
+	.....
+
+1.Inbuilt validations	
+	:Are performed by HTML5 automatically using "required,minlength,maxlength etc" attribute.
+Drawback:
+	Cannot generate user friendly error msgs
+Example: eventex11.html
+
+2.Custom/User defined validations
+	1.Using JS control Statements
+		Example: eventex12.html
+		Example: eventex13.html
+		Example: eventex14.html
+		Example: eventex15.html	(pswd & confirm pswd validation)
+		Example: eventex16.html	(Calculator)
+	2.Using regular expressions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

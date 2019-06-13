@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       #d1
+       {
+            color:red;
+            border:1px solid yellow;
+            height: 70px;
+            width: 150px;
+       }
+    </style>
+<script>
+      //approach2:using div tag
+      function fun1()
+      {
+          var data=document.getElementById('id1').value
+          if(data=="")
+          {
+              document.getElementById('d1').innerHTML="* Please fill ur name"
+              return false
+          }
+          else
+          {
+            alert(data+' is accepted')
+            return true
+          }
+      }
+</script>
+</head>
+<body>
+    <form action="result.html" onsubmit="return fun1()">
+        Name:<input type="text" id="id1">      <br>
+        <input type="submit">
+    </form>
+    <div id="d1">  </div>
+</body>
+</html>
