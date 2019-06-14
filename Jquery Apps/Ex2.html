@@ -1,0 +1,31 @@
+<html>
+<head>
+        <title>Js vs Jquery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+        <h1 id="id1">Hello1</h1>
+        <h1 id="id2">Hello2</h1>
+        <h1 id="id3">Hello3</h1>
+        <script>
+              function myfun1()          //Called function1
+              {
+                $('#id1').text('Bye1')
+              }
+              myfun1()
+              function myfun2()          //Called function2
+              {
+                $('#id2').text('Bye2')
+              }
+              $(document).ready(myfun2());
+              $(document).ready(
+                      function()               //Anonymous Called & Calling function3
+                      {
+                        $('#id3').text('Bye3')
+                        $('#id4').text('Bye4')
+                      }
+              );
+        </script>
+        <h1 id="id4">Hello4</h1>
+</body>
+</html>

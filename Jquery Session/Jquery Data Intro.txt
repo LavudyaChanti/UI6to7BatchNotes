@@ -1,0 +1,404 @@
+UI(User Interface) Technologies:
+--------------------------------
+jQuery is a JavaScript library designed to 
+1.simplify HTML DOM tree traversal and manipulation,
+2.Event handling, CSS animation, Affects,and Ajax Calls.
+
+License			: MIT(Massachusetts Institute of Technology)
+Original author		: John Resig
+Stable release		: 3.4.1
+Initial release date		: 26 August 2006
+Written in		: JavaScript
+Site			:https://jquery.com/
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+JQuery:
+----------
+	->Introduced in 2006 by John Resig.
+	->JQuery is langauge developed on completely JavaScript.
+	->JavaScript library is used to preapre a Jquery program.
+	->Jquery is used by Google,MicroSoft,IBM,,...
+Uses:
+	1.Html manipulation
+	2.CSS manipulation
+	3.JS Event Handling
+	4.Animations & Effects
+	5.JSON parsing
+	6.Ajax interaction
+	7.DOM Traversing
+
+Installation Process:
+-----------------------------
+We can do JQuery apps in two ways
+
+1.Downloading JQuery library(.js file from jquery site)
+	
+	->Paste the downloaded into the current working directory
+	->We can get this .js file in two versions
+		1.Production Version
+				->Live web sites		{compressed version}
+		2.Development Version
+				->Testing & development purpose	{uncompressed version}
+
+2.Using CDN url{Content Delivery Network}
+
+	Jquery CDN is given by Google & Microsoft.
+
+
+Note:
+
+1.In both process we use <script> tag to add the .js libraryname or cdn url
+2.<script> should be present in <head> tag
+
+Google CDN:
+-----------
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+Microsoft CDN:
+--------------
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+
+__________________________________________________________________________
+
+
+
+
+
+
+
+
+
+Standard Syntax:
+-----------------------
+$(document).ready(			//Anonymous Function
+			function()			
+			{
+					$("#d3").text("WELCOME From JQuery Program");
+			}
+		);
+
+Basic Code Explaination:
+-------------------------
+1.$:
+----
+	->Act as constructor in jquery
+	->Can be writeen as $() or jQuery()
+	->All jQuery constructors strats with $
+	->constructors starts with $ and selector enclosed with (,)
+	->Selector can be
+
+		1.Element tag Selector		=>("p")
+		2.Element id Selector		=>("#id1")
+		3.Element class Selector	=>(".c1")
+
+Example:
+		<p>Hello1</p>
+		<p id="id1">Hello2</p>
+		<p class="c1">Hello3</p>
+
+2.() selector:
+---------------
+	It search whole document(DOM->Dcoument Object Model) to find all selectors that match
+with given selector property.
+
+3.$(document).ready():
+---------------------
+	Executing jQuery code after the html documnet has completely loaded & ready to manipulate.
+
+
+
+
+
+
+Content:
+--------
+1.Selector Types
+2.Events	{same as javascript events}
+3.Effects
+4.Html manipulations
+5.Css manipulation
+6.Traversing
+7.Filters
+8.Ajax
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+1.Selector Types:
+-----------------
+
+
+SNO	Selector	Description		Ex
+---	--------	-----------		--
+1	Tag		Specific tag selected	$("p"),$("h1"),.....
+2	Id		Specific ID selected	$("#id1"),...
+3	Class		Specific class selected	$(".c1"),...
+4	Universal	All dom selected	$("*"),...
+5	this		current dom selected	$(this),...
+
+
+2.Events:
+---------
+	An action on html item is called as an Event.
+Ex:
+	button was clicked
+	button was double clicked
+	mouse entered on p item
+
+Types of events:
+----------------
+1.Mouse related events
+2.Keyboard related events
+3.Form related events
+4.Window/Document related events
+
+1.Mouse related events:
+=======================
+1.click
+2.dblclick
+3.mouseenter
+4.mouseleave
+5.hover(act as mouseenter&leave)
+6.mouseup
+7.mousedown
+8.focus	->This event is fired when form field gets focused
+9.blur	->This event is fired when form field loses focused
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+3.Effects:
+==========
+1.hide/show
+2.fadein/out
+3.slidedown/up
+4.animate
+
+
+1.hide/show :
+-------------
+	you can hide and show HTML elements
+
+Methods:
+	hide()
+	show()
+	toggle()	{hide+show}
+	
+
+2.fadein/out:
+--------------	
+	you can fade elements in and out of visibility
+
+Methods:
+	fadeIn()
+	fadeOut()
+	fadeToggle()	{in+out}
+
+Note:	In css make display: none; to work with fade style
+
+3.slidedown/up:
+---------------
+	you can create a sliding effect on elements
+
+Methods:
+	slideDown()
+	slideUp()
+	slideToggle()	{Down+Up}
+
+
+
+
+4.animate:
+----------
+ Resizinig & Replacing html items
+
+ animate() method is used to create custom animations
+
+
+Note:	In css make position:relative; to work with fade style
+
+
+_____________________________________________________________________________________
+
+
+4.Html manipulations:
+====================
+1.Get the data from Html Tags
+2.Set Data to the Html Tags
+3.Adding data to Html tags
+4.Removing data from Html tags
+
+1.Get the data from Html Tags:
+------------------------------
+Ex:	
+	<div>
+		<p>Hello1</p>
+		<a href="http://www.google.com">Visit Google Page</a>
+		<input type="text" name="n1" value="USA">
+	</div>
+
+Methods:
+
+	1.text()	->Returns text/inner html between html tags
+	2.html()	->Returns text & html code
+	3.val()		->Returns value of the form field
+	4.attr()	->Returns attribute value
+
+
+2.Set Data to the Html Tags:
+----------------------------
+Methods:
+
+	1.text()	->Assign text/inner html between html tags
+	2.html()	->Assign text & html code
+	3.val()		->Assign value of the form field
+	4.attr()	->Assign attribute value
+
+3.Adding data to Html tags:
+---------------------------
+Methods:
+	1.append	:add data after html element
+	2.prepend	:add data before html element
+	3.before	:add data before line of html element
+	4.after		:add data after line of html element
+
+
+4.Removing data from Html tags:
+--------------------------------
+1.empty()	->It removes only inner html
+2.remove()	->It removes complete html elements
+
+______________________________________________________________
+
+5.Css manipulation:
+-------------------
+1.addClass()
+2.removeClass()
+3.toggleClass()
+4.css()
+	
+
+
+______________________________________________________________
+
+6.Dimensions:
+------------
+	1.width()
+	2.height()
+	3.innerWidth()	=width+padding-left+padding-right
+	4.innerHeight()	=height+padding-top+padding-bottom
+	5.outerWidth()	=width++padding-left+padding-right+border-left+border-right
+	6.outerHeight()	=height+padding-top+padding-bottom+border-tom+border-bottom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+7.Traversing:
+-------------
+
+<html>
+	<body>
+		<div class="d1">
+
+			<h1>Hello Html</h1>
+
+			<p>Hi <i> Niharika</i></p>
+
+			<ol>
+				<li>Html</li>
+				<li>CSS</li>
+				<li>Js</li>
+			</ol>
+
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+Methods:
+--------
+Bottom-to-Top accessing:
+________________________
+
+1.parent()
+2.parents()
+3.parentsUntil()
+
+Top-to-Bottom accessing:
+________________________
+
+4.children()
+5.find()
+
+
+Left-to-Right & Right to Left accessing:
+________________________________________
+
+6.siblings()
+
+7.next()
+8.nextAll()
+9.nextUntill()
+
+10.prev()
+11.prevAll()
+12.previousUntill()
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------
+
+8.Filters:
+---------
+	Selector:Tag,Id,Class,Universal and this
+	Filters are used to access specific html items
+
+
+1.first()
+2.last()
+3.filter()
+4.eq()
+5.not()
+6.has()
+
+
+
+
+
+
+
+
+
