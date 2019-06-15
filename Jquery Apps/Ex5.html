@@ -1,0 +1,117 @@
+<html>
+<head>
+  <style>
+  #d1{
+    height: 100px;
+    width: 300px;
+    background-color: aqua;
+    display: none;
+  }
+  #d2
+		{
+			width: 100px;
+			height: 100px;
+			background: red;
+      position: relative;
+		}
+  #i2
+  {
+    position: relative;
+  }
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<p>Welcome to HideShow Affects</p>
+<button id="b1">hide</button>
+<button id="b2">show</button>
+<button id="b3">toggle</button>     <hr>
+<div id="d1">
+    Welcome to FadeInOut Affects
+</div>
+<button id="b4">fadein</button>
+<button id="b5">fadeout</button>
+<button id="b6">fadetoggle</button>     <hr>
+<img src="2.jpg" id="i1" height="100px" width="100px"><br>
+<button id="b7">slideup</button>
+<button id="b8">slidedown</button>
+<button id="b9">slidetoggle</button>     <hr>
+<img src="Koala.jpg" id="i2" height="100px" width="100px"><br>
+<button id="b10">start animation1</button>     <hr>
+<div id="d2">
+   
+</div>
+<button id="b11">start animation2</button>
+<script>
+$(document).ready(function()
+{
+  $('#b1').click(function(){
+    $('p').hide();
+  });
+  $('#b2').click(function(){
+    $('p').show();
+  });
+  $('#b3').click(function(){
+    $('p').toggle();
+  });
+  $('#b4').click(function(){
+    //$('#d1').fadeIn();
+    //$('#d1').fadeIn(3000);
+    $('#d1').fadeIn("slow");
+  });
+  $('#b5').click(function(){
+    $('#d1').fadeOut(3000);
+  });
+  $('#b6').click(function(){
+    $('#d1').fadeToggle(5000);
+  });
+  $('#b7').click(function(){
+    $('#i1').slideUp(4000);
+  });
+  $('#b8').click(function(){
+    $('#i1').slideDown(2000);
+  });
+  $('#b9').click(function(){
+    $('#i1').slideToggle();
+  });
+  $('#b10').click(function(){
+    $("#i2").animate(
+				{
+					right:300,
+				})
+				.animate(
+				{
+					left:300,
+				});
+  });
+  $('#b11').click(function(){
+    $("#d2").animate(
+				{
+					width:"200px",
+					height:"200px"
+				}).animate(
+				{
+					width:"100px",
+					height:"100px"
+				}).animate(
+				{
+					width:"200px",
+					height:"200px"
+				}).animate(
+				{
+					width:"100px",
+					height:"100px"
+				}).animate(
+				{
+					width:"200px",
+					height:"200px"
+				}).animate(
+				{
+					width:"100px",
+					height:"100px"
+				});
+  });
+});
+</script>
+</body>
+</html>

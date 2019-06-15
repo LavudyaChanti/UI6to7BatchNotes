@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<p>Welcome to Events in jQuery</p>
+<button id="b1">hide</button>
+<button id="b2">show</button>
+<script>
+$(document).ready(function()
+{
+  $('#b1').click(function(){
+    $('p').hide();
+  });
+  $('#b2').dblclick(function(){
+    $('p').show();
+  });
+});
+</script>
+</body>
+</html>

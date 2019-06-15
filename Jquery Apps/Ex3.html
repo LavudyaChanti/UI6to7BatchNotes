@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Headding Text1</h1>
+    <h1 id="x">Headding Text2</h1>
+    <p class="c1">Paragraph1</p>
+    <p class="c2">Paragraph2</p>
+    <p>Paragraph3</p>
+    <h1>Headding Text3</h1>
+    <button>Click me</button>
+    <script>
+      $(document).ready(
+        function()
+        {
+          $('*').css('text-align','center');
+          $('h1').css('color','green');
+          $('#x').css('background-color','yellow');
+          $('.c1,.c2').css('background-color','pink');
+          $('button').click(
+            function()
+            {
+              $(this).css('color','red');
+              $(this).css('background-color','yellow');
+            }
+          );
+        }
+
+      );
+    </script>
+</body>
+</html>
