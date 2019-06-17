@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+    div
+    {
+        height: 200px;
+        width: 200px;
+        border: 20px solid green;
+        padding: 40px;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+        DIMENSIONS
+</div>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+<button id="b1">height</button>     
+<button id="b2">width</button> 
+<button id="b3">inner height</button> 
+<button id="b4">inner width</button> 
+<button id="b5">outer height</button> 
+<button id="b6">outer width</button> 
+<script>
+    $(document).ready(function()
+    {
+       $('#b1').click(function()
+       {
+           $('#p1').text($('div').height())
+       });
+       $('#b2').click(function()
+       {
+           $('#p2').text($('div').width())
+       });
+       $('#b3').click(function()
+       {
+           $('#p3').text($('div').innerHeight())
+       });
+       $('#b4').click(function()
+       {
+           $('#p4').text($('div').innerWidth())
+       });
+       $('#b5').click(function()
+       {
+           $('#p5').text($('div').outerHeight())
+       });
+       $('#b6').click(function()
+       {
+           $('#p6').text($('div').outerWidth())
+       });
+    });
+</script>
+</body>
+</html>

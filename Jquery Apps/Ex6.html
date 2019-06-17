@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <div>
+    <p>Hi</p>
+    <input type="text" value="James" name="n1" placeholder="TypeUrName">
+  </div>
+<script>
+    $(document).ready(function()
+    {
+      //get data
+      alert($('div').text())
+      alert($('div').html())
+      alert($('input').val())
+      alert($('input').attr('name'))
+      alert($('input').attr('placeholder'))
+    });
+</script>
+</body>
+</html>
