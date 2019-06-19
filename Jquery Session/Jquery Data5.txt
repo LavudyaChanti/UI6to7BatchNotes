@@ -1,0 +1,79 @@
+Ajax:(Asynchronous Javascript And Xml)
+===================================
+Jquery functions:
+===============
+1.load()	->Retriving/Getting data from server
+2.get()	->Retriving/Getting data from server
+3.put()	->Updating data within server
+4.post()	->Inserting data within server
+5.delete()->Deleting data within server
+
+Program1:AjaEx1	(Get Text File data from server)
+
+Syntax of load() function:
+=======================
+
+$("selector").load("filename.extension",function(resTxt,stTxt,xhr)
+{
+
+});
+
+Callback function arguments explaination:
+--------------------------------------------------------------
+Arg1:resTxt	=>	Response Text
+
+Arg2:stTxt	=>	Status Codes	(100,200,300,400,500)
+			(Refer:https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+Arg3:xhr		=>	Xml Http Request status(success/error)
+
+
+
+Program2:AjaEx2 for 3 arguments explaination
+
+
+Note:
+---------
+Ajax can get data from server in 4 ways
+1.Text file	:
+	emp.txt		=>	501	ajay	45000
+2.Html file:
+	emp.html
+			<div>
+				<p>502</p>
+				<p>Ram</p>
+				<p>35000</p>
+			</div>
+3.Xml file:
+	emp.xml
+			<emp>
+				<eid>503</eid>
+				<ename>Depak</ename>
+				<esal>25000</esal>
+			</emp>
+4.Json file:
+	emp.json
+		{"emps":
+			[    
+    				{"eid":"501", "ename":"ajay","esal":"45000"},    
+   				{"eid":"502", "ename":"ram","esal":"35000"}, 
+			]
+		}  
+
+Program3:AjaEx3	(Get all types of Files data from server)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
