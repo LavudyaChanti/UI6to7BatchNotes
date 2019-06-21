@@ -32,10 +32,8 @@ Bootstrap Installation with CDN:
 ===========================
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +47,6 @@ There are two container classes to choose from:
 1.The .container class provides a responsive fixed width container
 2.The .container-fluid class provides a full width container, spanning the entire width of the 
 viewport
-
 
 Ex1.html for demo program
 
@@ -124,27 +121,28 @@ More Typography Classes
 
 	Ex3.html
 
-2.Lists:
-======
+2.Responsive Lists:
+================
 	.list-group
 	.list-group-item list-group-item-success
 	.list-group-item list-group-item-info
 	.list-group-item list-group-item-warning
 	.list-group-item list-group-item-danger
 
+	Ex4.html
 
 
-Images:
-=======
+3.Responsive Images:
+==================
 	img-rounded
 	img-circle
 	img-thumbnail
 	img-responsive class makes the image scale nicely to the parent element 
 		(resize the browser window to see the effect)
+	Ex5.html
 
-
-table:
-======
+4.Responsive table:
+=================
 	table 			class adds basic styling to a table
 
 	table-bordered 		class adds borders on all sides of the table and cells
@@ -155,8 +153,10 @@ table row:
 ==========
 	active, success, info, warning, danger.
 
-Button:
-=======
+	Ex6.html
+
+5.Responsive Button:
+==================
 	btn
 	btn-default
 	btn-primary
@@ -175,4 +175,44 @@ Button:
 
 	active makes a button appear pressed
 	disabled makes a button unclickable
+
+	Ex6.html
+
+6.Responsive Form & Items:
+========================
+Bootstrap Form Layouts:
+-------------------------------------
+Bootstrap provides three types of form layouts:
+
+1.Vertical form (this is default)
+2.Horizontal form
+3.Inline form
+
+
+.form-group		:<form>
+.form-control		:<input type="text">,<input type="dob">
+	
+<form>
+	<label>Name:	</lable>
+	<input type="text">
+	<label>DOB:	</lable>
+	<input type="dob">
+</form>
+
+
+glyphicons:
+=========
+https://www.glyphicons.com/
+
+
+
+
+
+
+
+
+
+
+
+
 
