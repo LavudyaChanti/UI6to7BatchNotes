@@ -1,0 +1,17 @@
+<!--Difference between JS & Angular Js-->
+<html ng-app>
+<head>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-init="c=30;d=40">
+    <div id="d1">   </div>
+    <script>
+            var a=10
+            var b=20
+            document.write(a)
+            document.getElementById('d1').innerHTML=b
+    </script>                           <hr>
+    C=  {{c}}                           <hr>
+    D=  <div ng-bind="d">  </div>
+</body>
+</html>

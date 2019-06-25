@@ -1,0 +1,49 @@
+<html ng-app>
+<head>
+    <script src="angular.min.js"></script>
+</head>
+<body>
+    <div ng-init="a=10;b=20">
+            a=              {{a}}           <br>
+            b=<span ng-bind="b"></span>
+    </div>
+    <div ng-init="rollno=[501,502,503,504,505]">
+           {{rollno[0]}}
+           <span ng-bind="rollno[1]"></span>
+           <span ng-bind="rollno[2]"></span>
+           <span ng-bind="rollno[3]"></span>
+           {{rollno[4]}}
+    </div>
+    <div ng-init="heights=[5.3,5.8,5.9]">
+            <span ng-repeat="t in heights">
+                    {{t}}
+            </span>
+    </div>
+    <div ng-init="hobbies=['singing','playing cricket','swimming']">
+            <ul ng-repeat="t in hobbies">
+                    <li ng-bind="t"></li>
+            </ul>
+    </div>
+    <div ng-init="student={'eid':501,'ename':'Ram','esal':45000}">
+            {{student.eid}}                             <br>
+            <span ng-bind='student.ename'></span>       <br>
+            <b ng-bind='student.esal'></b>
+    </div>
+    <div>
+            Name:<input type="text" ng-model="x">            <br><br><br>
+             Ur Name is:{{x}}                                  <hr>
+           Select any alphabet:
+            <select ng-model="y">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>                                       <br><br><br>
+            Ur selected {{y}} alphabet                      <hr>
+            Address:
+            <textarea rows="5" cols="8" ng-model="z">
+
+            </textarea><br><br><br>
+            Ur address is:{{z}}
+    </div>
+</body>
+</html>
