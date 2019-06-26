@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <script>
+        //MVC application
+        var myapp1=angular.module('M1',[]);
+        myapp1.controller('C1',function($scope)
+        {
+            //Data
+            $scope.fn='A'
+            $scope.ln='B'
+            //Function
+            $scope.fullname = function() 
+            {
+                return $scope.fn+$scope.ln;
+            };
+        });
+    </script>
+    <div ng-app="M1" ng-controller="C1">
+        First Name:<input type="text" ng-model="fn">  <br>
+        Last Name:<input type="text" ng-model="ln">  <br>
+        FullName(View)={{fullname()}}
+    </div>
+</body>
+</html>

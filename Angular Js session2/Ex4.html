@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <script>
+        var myapp1=angular.module('M1',[]);
+        myapp1.controller('C1',function($scope)
+        {
+            //Data
+            $scope.n1=25
+            $scope.n2=35
+            //Function
+            $scope.sum = function() 
+            {
+                return $scope.n1+$scope.n2;
+            };
+        });
+    </script>
+    <div ng-app="M1" ng-controller="C1">
+       Sum is={{sum()}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <script>
+        var myapp1=angular.module('M1',[]);
+        myapp1.controller('C1',function($scope)
+        {
+            //Data
+            $scope.x=100
+            $scope.y=200
+            $scope.rollno=[501,502]
+            $scope.emp={'eid':101,'ename':'Ajay'}
+            //Function
+        });
+    </script>
+    <div ng-app="M1" ng-controller="C1">
+       X+Y= {{x+y}}                             <br>
+       RollNo={{rollno[0]}},{{rollno[1]}}      <br>
+       EMP={{emp|json}}
+    </div>
+</body>
+</html>

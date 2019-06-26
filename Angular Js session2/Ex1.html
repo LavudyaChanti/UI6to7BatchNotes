@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <script>
+        var myapp1=angular.module('M1',[]);
+        myapp1.controller('C1',function($scope)
+        {
+            //Data
+            $scope.x=100;
+            //Function
+        });
+    </script>
+    <div ng-app="M1" ng-controller="C1">
+       X= {{x}}
+    </div>
+</body>
+</html>
