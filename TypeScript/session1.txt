@@ -1,0 +1,144 @@
+ECMAScript (European Computer Manufacturers Association Script):
+=========================================================
+1.ECMAScript is a scripting-language specification standardized by 
+   Ecma International in ECMA-262 and ISO/IEC 16262. 
+
+2. It was created to standardize JavaScript, so as to foster multiple independent implementations.
+
+3.Designed by Brendan Eich, Ecma International.
+
+4.Influenced languages: 
+	Self,
+	HyperTalk,
+	AWK,
+	 C,
+	CoffeeScript
+	 Perl, 
+	Python, 
+	Java, 
+	Scheme.
+
+5.	Developed by	Sun Microsystems,Ecma International
+	Initial release	June 1997; 22 years ago
+
+6.ECMAScript Editions
+
+Version	Official Name	
+----------	-------------------
+1	ECMAScript 1 (1997)	
+2	ECMAScript 2 (1998)	
+3	ECMAScript 3 (1999)	
+4	ECMAScript 4	Never released.
+5	ES5 (2009)	JS(core)
+6	ES6 / ES2015	JS(adv)
+7	ES2016 (ES7)	TS
+8	ES2017 (ES8)	TS
+
+
+7.ECMAScript is often abbreviated to ES.
+
+8.JavaScript Vs ECMAScript:
+========================
+JavaScript was developed for Netscape. 
+Netscape 2 was the first browser to run JavaScript.
+After Netscape the Mozilla foundation continued to develop JavaScript for the Firefox browser.
+The latest JavaScript version was 1.8.5. (Identical to ECMAScript 5).
+ECMAScript was developed by ECMA International after the organization adopted JavaScript.
+The first edition of ECMAScript was released in 1997.
+
+9.TypeScript Vs JavaScript:
+=====================
+Reference:	https://www.guru99.com/typescript-vs-javascript.html
+
+
+Summary:
+---------------
+JavaScript is a scripting language which helps you create interactive web pages
+Typescript is a modern age Javascript development language
+Javascript is a specially designed tool for small scripts
+TypeScript supports JS libraries & API Documentation
+Javascript first version was published in the year 1995
+The typescript was first made public in the year 2012
+It's used for client side and server side
+Typescript offered great productivity for developers
+Javascript is a Lightweight, interpreted, object-oriented language with first-class functions
+Typescript is a powerful type system, including generics & JS features
+For small size project Javascript is an ideal option, but for large size project you can use Typescript
+
+
+
+
+______________________________________________________________________________
+
+Microsoft TypeScript:
+------------------------------
+1.Microsoft TypeScript is an open-source programming language developed 
+and maintained by Microsoft. 
+
+2.It is a strict syntactical superset of JavaScript, and adds optional static typing to the language. 
+
+3.TypeScript is designed for development of large applications and transcompiles to JavaScript. 
+
+4.Key points:
+
+Stable release		: 3.4.5 / 24 April 2019
+Filename extensions	: ts,.tsx
+First appeared		: 1 October 2012
+Designed by		: Microsoft Corporation
+Officil Site		:https://www.typescriptlang.org/
+
+5.How To Get TypeScript?:
+------------------------------------
+->TypeScript is a JavaScript code which run server
+->So we neew a local server i.e node js
+->Node.js is an open-source, cross-platform JavaScript run-time environment that 
+executes JavaScript code outside of a browser. 
+
+5.1.Node js installation:
+----------------------------------
+->Download from https://nodejs.org/en/ site
+	Version:		node-v10.16.0
+->After node js installation,open cmd promt type "node -v" to check the version
+
+->Here we can install typescript by using npm tool on nodejs sever
+npm:
+-------
+->npm is a package manager for the JavaScript programming language. 
+->It is the default package manager for the JavaScript runtime environment Node.js. 
+->It consists of a command line client, also called npm, and an online database of public and
+ paid-for private packages, called the npm registry. 
+->npm tool is used add 3rd party dependecies into nodejs sever like 
+	1.typescript
+	2.bootstrap
+	3.puppet
+	4.angular
+	5.expressjs
+	6.mongodb
+	etc
+Syntax:
+	npm	install	-g	<pkgName>
+
+Installation of TypeScript:
+-----------------------------------
+	npm 	install 	-g 	typescript
+Verify:
+----------
+	tsc 	-version		(tsc->Typescript compiler)
+
+output	:	3.5.2
+
+First App in TypeScript:
+--------------------------------
+step1:open notepad/sublime text/vsc,... & prepare following code
+	console.log("Welcome to TypeScript");
+
+step2:save with demo.ts
+step3:	COMPILE:		tsc 	demo.ts
+
+	RUN	:		node	demo.js			
+	
+
+
+
+
+

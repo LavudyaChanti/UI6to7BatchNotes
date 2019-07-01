@@ -1,0 +1,23 @@
+h2{
+    text-align: center;
+    color: red;
+}
+h3{
+    color: blue;
+    background-color: cornsilk;
+}
+p{
+    color: green;
+    text-align: justify;
+}
+
+.even{
+    color:blue;
+    background-color: blanchedalmond;
+    border: 2px solid blue;
+}
+.odd{
+    color: blueviolet;
+    background-color: powderblue;
+    border: 2px solid red;
+}
