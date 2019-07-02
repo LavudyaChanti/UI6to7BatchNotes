@@ -1,0 +1,71 @@
+Core JS Function related topics:
+---------------------------------------------
+	1.Called Function
+	2.Calling Function
+	3.Types of Functions based on return value & paramaterlist(4 types)
+	4.Types of parameter list	(actual & formal)
+	5.Recursion
+	6.Nested Function
+	7.Types of variables	(Local & Global)
+
+Adv JS +Type script Function related topics:
+--------------------------------------------------------------
+	8.Types of parameter list	(actual ,formal,default,rest)
+	9.Function preparation ways
+		9.1	Function	declaration
+		9.2	Function expression
+		9.3	Arrow function
+		9.4	Anonymous function/Lambda functions
+		9.5	IIFE
+		9.6	Callback functions
+
+Type script Topics:
+--------------------------
+1.Rest parameter & Spread operator
+2.Class,Object,Interface,Constructor
+3.Modules(export,import)
+4.Template literals
+5.let & const keyword
+6.Decorators
+7.Generics
+________________________________________________________________________
+
+1.const keyword:
+-------------------------
+Used to declare constants
+Used in 3 ways
+
+	1.before variable		:you cannot be reassigned
+	2.before arrays		:you can NOT reassign a constant array
+	3.before objects		:you can NOT reassign a constant object
+
+2.Template Literals:
+-----------------------------
+Here we use back tics(`,`)
+
+
+3.Function preparation ways:
+------------------------------------------
+Approach1:	Function	declaration
+Approach2:	Function expression
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
