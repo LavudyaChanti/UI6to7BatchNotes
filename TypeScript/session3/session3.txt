@@ -1,0 +1,97 @@
+Core JS Function related topics:
+---------------------------------------------
+	1.Called Function
+	2.Calling Function
+	3.Types of Functions based on return value & paramaterlist(4 types)
+	4.Types of parameter list	(actual & formal)
+	5.Recursion
+	6.Nested Function
+	7.Types of variables	(Local & Global)
+
+Adv JS +Type script Function related topics:
+--------------------------------------------------------------
+	8.Types of parameter list	(actual ,formal,default,rest)
+	9.Function preparation ways
+		9.1	Function	declaration
+		9.2	Function expression
+		9.3	Arrow function
+		9.4	Anonymous function/Lambda functions
+		9.5	IIFE
+		9.6	Callback functions
+
+Type script Topics:
+--------------------------
+1.Rest parameter & Spread operator
+2.Class,Object,Interface,Constructor
+3.Modules(export,import)
+4.Template literals
+5.let & const keyword
+6.Decorators
+7.Generics
+________________________________________________________________________
+Function preparation ways:
+----------------------------------------
+Approach1:	Function	declaration
+Approach2:	Function expression
+Approach3:	Arrow function				:	refer demo1.ts
+Approach4:	Anonymous function/Lambda functions	:	refer demo2.ts
+
+An anonymous function is a function that was declared without any named 
+identifier to refer to it. 
+As such, an anonymous function is usually not accessible after its initial creation.
+
+
+Approach5:	IIFE	Or 	SIF		:	refer demo3.ts
+________________________________________________
+Immediate Invoke Function Expression Or Self-Invoking Functions:
+=======================================================
+Function expressions can be made "self-invoking".
+A self-invoking expression is invoked (started) automatically, without being called.
+Function expressions will execute automatically if the expression is followed by ().
+You cannot self-invoke a function declaration.
+You have to add parentheses around the function to indicate that it is a function expression:
+
+Approach6:	Callback functions	:	
+_________________________________	
+	:	refer demo4.ts
+	:	refer demo5.ts
+	:	refer demo6.ts
+	:	refer demo7.ts
+
+
+Def:
+------
+They can be passed as an argument to any other function while calling.
+Callbacks are a great way to handle something after something else has been completed. 
+By something here we mean a function execution. 
+If we want to execute a function right after the return of some other function, then callbacks 
+can be used.
+
+______________________________________________________________________________
+
+Let Vs Var keyword:
+----------------------------
+Both are used to delcare varaibles
+Var keyword will gives Function Scope
+Let keyword will gives Block Scope
+
+	:	refer demo8.ts	(Error program)
+	:	refer demo9.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

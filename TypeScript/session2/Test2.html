@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     num = Number(prompt('Enter a value : '))
+     copy = num;
+     rev = 0
+    
+     do{
+        rev = rev * 10 + num % 10;
+        num = Math.floor(num/10)
+     }while(num>0)
+     if(copy==rev){
+         document.writeln(copy,'is palindrome number')
+     }else{
+         document.writeln(copy,'is not a palindrome number')
+     }
+    </script>
+</body>
+</html>
