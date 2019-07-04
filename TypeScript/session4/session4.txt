@@ -1,0 +1,114 @@
+1.Rest parameter(...):
+---------------------------
+	Declaring a formal parameter with ... operator is called as Rest parameter
+	It accept any no of arguments in Array format
+Refer:app1.ts
+
+2.Spread operator(...):
+---------------------------
+	Declaring ... operator is inside array is called as Spread operator
+	Used to merge two or more arrays
+Refer:app2.ts
+
+3.default paramater:
+------------------------------
+	Assiging values at format parameter is called as default paramater.
+
+Refer:app3.ts
+
+4.Optional paramater:
+------------------------------
+TypeScript is a strong typed language. 
+When we declare parameters for a function then all the parameters are required and client has to pass values 
+to every parameter. 
+When client has no value for any parameter then he can pass null value. 
+TypeScript provides a Optional parameters feature using index operator(?).
+By using Optional parameters featuers, we can declare some paramters in the function optional, 
+so that client need not required to pass value to optional parameters.
+
+Refer:app4.ts
+	
+_______________________________Part2 index_______________________________________________
+OOPS features in Typescript:
++++++++++++++++++++++++++
+1.Class
+2.Object
+3.Constructor
+4.Inheritance
+5.Interfaces
+6.Modules
+	1.export keyword
+	2.import keyword
+7.Decorators/Annotations
+_____________________________________________________________________________________
+
+1.Class	:It is imaginary thing which bind attributes(Data) & behaviours(Functions)
+	syntax:
+		class	ClassName
+		{
+			attributes(Data) 
+				+
+			behaviours(Functions)
+		}
+	example:
+		class	Human
+		{
+			//Attributes(Data) 
+			name:string;
+			age:number;
+			height:number;
+			//Behaviours(Functions)
+			printdata():void
+			{
+				console.log('Name='+this.name);
+				console.log('Age'+this.age);
+				console.log('Height'+this.height);
+			}
+			eating(item:string):void
+			{
+				console.log(this.name+' eating '+item+' food item')
+			}
+			sleeping(noh:number):void
+			{
+				console.log(this.name+' sleeping'+noh+' hours per day')
+			}
+		}
+2.Object	:It is physical existing thing which defines class members
+	syntax:
+		let	objectname=new	ClassName();
+	example:
+		let	p1=new	Human();
+		p1.name='Ajay'
+		p1.age=22
+		p1.height=5.3
+		p1.printdata()
+		p1.eating('Chiken Biryani')
+		p1.sleeping(8)
+
+
+Refer:app5.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

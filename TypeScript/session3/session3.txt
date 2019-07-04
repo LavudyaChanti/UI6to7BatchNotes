@@ -70,7 +70,7 @@ can be used.
 ______________________________________________________________________________
 
 Let Vs Var keyword:
-----------------------------
+-------------------
 Both are used to delcare varaibles
 Var keyword will gives Function Scope
 Let keyword will gives Block Scope
