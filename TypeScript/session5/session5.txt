@@ -1,0 +1,105 @@
+Class & Object based programs:
+------------------------------
+App1:Sum of 2 number
+	Data	:	n1,n2
+	Function	:	sum()
+
+App2:Square & Cube of a number
+	Data	:	n
+	Functions	:	sqare() & cube()
+Constructor:
+------------
+	It is a special meber Function inside Class
+	It is mainly used to initalize Data
+	It is automatically executed at the time of object creation
+Syntax:
+	constructor(parameterlist)
+	{
+		//body of Constructor
+	}
+App3:Sum of 2 number using constructor
+	Data		:	n1,n2
+	Function	:	sum()
+
+App4:Square & Cube of a number using constructor	(Task1)
+	Data		:	n
+	Functions	:	sqare() & cube()
+
+Inheritance:
+============
+1.Def: Extracting properties from existing/parent class to new/child class
+2.Keyword	:we use extends keyword to make inheitance relationship 
+between 2 classes
+3.Representation:
+	class	Class1
+	{
+		Data
+		Constructor
+		Function
+	}
+	class Class2 extends Class1
+	{
+		Data
+		Constructor
+		Function
+	}
+
+
+
+Refer	:App5.ts		//Inheritance with data
+Refer	:App6.ts		//Inheritance with Functions
+Refer	:App7.ts		//Inheritance with Functions with overriding
+
+Overriding:
+-----------
+Preparing a method with same name in Parent & Child class then it said to be 
+it is Overrided.
+In overriding case always parent methods are hided & child methods can executes
+
+Inorder to execute both we used super() keyword
+super keyword always access parent members from child class
+
+Refer	:App8.ts	//Inheritance with Functions with super() keyword
+Refer	:App9.ts	//Inheritance with constructor
+
+
+Rule for inheritance in Classes:
+--------------------------------
+One time only one class can be inherited
+
+Refer	:App10.ts
+
+Types of inheritance:
+----------------------
+1.Single Level inheitance
+2.Multi Level inheitance
+3.Hierarchical inheitance
+4.Multiple inheritance
+5.Multipath inheitance
+
+Interface:
+----------
+It is like a class to bind data & functions with following rules
+
+1.Data should be declared not assigned
+2.Function should be declared without body
+
+Note:
+-----
+An Interface can be used a class through "implements" keyword
+
+Syntax for interface:
+---------------------
+interface InterfaceName
+{
+	data & functions
+}
+sample example:
+----------------
+interface MyInterface1
+{
+    mydata:number;
+    myfunction():void;
+}
+->Try to assign value to mydata & observe
+->Try to provide body to myfunction & observe
