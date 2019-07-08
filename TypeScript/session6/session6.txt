@@ -1,0 +1,151 @@
+I.Modules:
+==========
+	Module is typescript file.
+	Module consist a function/class/interface defination whicah can be used in another typescript file.
+Def:
+	module	=	Classes+Interfaces+Functions
+
+Module related keywords:
+--------------------------------------
+	1.export
+	2.import
+1.export:
+------------
+	Used to define module members which can be reused by another typescript application.
+syntax1:export as function
+	export	 defualt 	function	functionname(paramlist)
+	{
+		body
+	}
+syntax2:export as class
+	export 2.import	class	ClassName
+	{
+		Data
+		Constructor
+		Function
+	}
+2.import:
+-------------
+	Used to reuse the modules members which is already exported
+syntax:
+	import	modulename	from	'modulelocation';
+
+Example1:export & import the functions	(Showing msg)
+=========
+step1:create a function using export keyword 
+	export default function(name:string)
+	{
+   		console.log('Welcome Mr:'+name)
+	}
+step2:save the above file with MyFunDemo.ts
+
+step3:create mytest1.ts file to use above function
+
+	export default function(name:string)
+	{
+    		console.log('Welcome Mr:'+name)
+	}
+
+Example2:export & import the functions(addition of 2 numbers)
+=========
+step1:create a function using export keyword 
+	export default function(a:number,b:number)
+	{
+   		console.log(Sum is:'+(a+b))
+	}
+step2:save the above file with MyFunDemo1.ts
+
+step3:create mytest2.ts file to use above function
+
+	import sum from './MyFunDemo1'
+
+	sum(100,200)
+
+
+Example3:export & import the classes
+=========
+step1:create a class
+	export default class Cube
+	{
+		docube(n:number):void
+		{
+			console.log('Cube is:'+(n*n*n))
+		}
+	}
+step2:save the above file with MyClassDemo1.ts
+
+step3:create mytest3.ts file to use above class
+
+	import sum from './MyFunDemo1'
+
+	sum(100,200)
+
+
+Example4:export & import the classes + functions
+=========
+step1:create few classes & functions
+step2:save the above with "useme1.ts"
+step3:create "test1.ts" file to use C1 class & wish1() function
+step4:create "test2.ts" file to use C2,C3 classes & wish2(),wisg3() functions
+
+_______________________________________________________________________________________
+
+II.Packages:
+==========
+	Package is a folder which contains modules
+Def:
+	package is collection of modules
+
+
+Example5:export & import the classes + functions under the package/folder
+=========
+step1:create a folder with the name as "f1"
+step2:Open f1 folder, create a class,function inside mymodule1.ts
+step3:Open f1 folder, create a class,function inside mymodule2.ts
+step4:create "test3.ts" file to use f1 folder mymodule1.ts,mymodule2.ts classes & functions
+
+
+_______________________________________________________________________________________
+
+III.Decorator:
+--------------------
+Def:
+	Decorators are the special function in typescript to provide "metadata" for class
+	Decorator "metadata" prepared in JSON format(key,value)
+	Decorator are represented by using @ annotaions
+	Decorator "metadata" includes
+		
+		Keys		Values
+		-------		----------
+	1.metdata		custom directory name
+	2.template		template(html) text
+	3.templateUrl		template(html) file name
+	4.styles			css styles
+	5.styleUrl			css file name
+	6.provider		service names
+	
+syntax:
+----------
+	@DecoratorName({
+		key1:	value1,
+		key2:	value2,
+		.......
+	})
+	export	class	ClassName
+	{
+		Data
+		Constructor
+		Functions
+	}
+
+
+
+
+
+
+
+
+
+
+
+	

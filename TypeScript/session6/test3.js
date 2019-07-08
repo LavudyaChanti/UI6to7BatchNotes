@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var mymodule1_1 = require("./f1/mymodule1");
+var mymodule2_1 = require("./f1/mymodule2");
+var ob1 = new mymodule1_1.MyClass1();
+var ob2 = new mymodule2_1.MyClass2();
+ob1.sayhi('Sai');
+ob2.saybye('Sai');
+mymodule1_1.myfunction1('Sai');
+mymodule2_1.myfunction2('Sai');
