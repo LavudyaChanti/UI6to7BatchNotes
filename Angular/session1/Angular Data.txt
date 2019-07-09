@@ -1,0 +1,221 @@
+1.Def:
+======
+->Angular (commonly referred to as "Angular 2,4,5,6,7,8) is a 
+	1.TypeScript-based 
+	2.open-source front-end web application framework 
+led by the Angular Team at Google + Microsoft .
+
+->Angular is a complete rewrite from the same team that built AngularJS.
+
+Initial release	:	2.0 / 14 September 2016
+Stable release	:	8.0 / 28 May 2019
+
+Website		:	angular.io 
+
+2.Architecture :
+=============
+
+	PICTURE
+
+3.Angular main building blocks:
+===========================
+1.modules
+2.components
+3.templates
+4.metadata
+5.data binding
+6.directives
+7.services
+8.dependency injection.
+9.form preparation
+10.form validations
+11.routing
+
+4. Angular VS Angular Js:
+=======================
+Ref:	https://www.guru99.com/angularjs-1-vs-2-vs-4-vs-5-difference.html
+Ref:	https://www.educba.com/angular-js-vs-angular/
+
+
+Angular JS					Angular 2 and later
+----------------					--------------------------
+Released by Google in the year 2010.			Released in Sept 2016.
+
+JavaScript-based framework for creating SPA.		Complete re-write of AngularJS version by Typescript.
+
+Still supported but no longer will be developed.		It's updated version regularly released because of Semantic Versioning.
+
+The architecture of AngularJS is based on MVC.		The architecture of Angular 2 is based on service/controller.
+
+AngularJS was not developed with a mobile base in mind.	Angular 2 is a mobile-oriented framework.
+
+AngularJS code can write by using only ES5, ES6, and Dart.	We can use ES5, ES6, Typescript to write an Angular 2 code.
+
+Based on controllers whose scope is now over.		Nowadays, the controllers are replaced by components, 
+						and Angular 2-8 is completely component based.
+
+Factory, service, provider, value and constant are used 	The class is the only way to define services in Angular2
+for services	
+
+Run on only client-side				Runs on client-side & server-side
+
+ng-app and angular bootstrap function are used to initialize	bootstrapmodule() function is used to initialize
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.Angular Features:
+=================
+1.Angular does not have a concept of "scope" or controllers, instead it uses components.
+2.Angular has a different expression syntax for Data Binding:
+		I.One Way Data Binding:
+
+			1.Interpolation		{{}}
+			2.Property Binding		[]
+			3.Event Binding		()
+
+		II.Two Way Data Binding:	[	()	]
+
+3.Modularity – much core functionality has moved to modules
+4.Angular recommends the use of Microsoft's TypeScript language, which introduces the following features:
+	Class-based Object Oriented Programming
+	Static Typing	(DataTypes:	number,string,boolean,array,enum)
+	Generics		(any)
+	TypeScript is a superset of ECMAScript 6, and is backwards compatible with ECMAScript 5 (i.e.: JavaScript). 
+		
+	javascript		=	ECMAScript 1 to 5
+
+	typescript	=	ECMAScript 1 to 5	(javascript)	+ 	ECMAScript 6
+
+
+
+
+6.Angular Version Naming Conventions:
+=================================
+	Every 6 months angular is updated
+
+Ex:
+
+	Angular 7.2.0
+
+	7	->Version Change
+	2	->Minor Changes in Current Version
+	0	->Patch Change
+
+
+
+
+
+
+
+
+
+
+7.Software Setup:
+================
+1.Git 	(download & install)
+
+	Verify:	git	--version
+
+2.Node Js		=>	To run typescript programs we need server & client environment
+
+	Download Node Js from 	https://nodejs.org/	& install it
+
+	Verify:	node	--version		{10.15.0}
+
+3.npm tool	=>	It used to install extra packages to Node Js like typescript,angular cli,bootstrap,....
+
+	Ex1:	npm 	install 	-g 	typescript
+
+	Verify:	npm	--version		{6.4.1}
+
+4.Install Angular CLI(Common Language Interpreter
+
+You use the Angular CLI to 
+
+	1.Create projects,
+	2.Generate applications
+	3.Library code
+	4. Perform a variety of ongoing development tasks such as testing, bundling, and deployment.
+	5.Auto Intelligence
+	
+Installation:
+---------------
+	npm 	install 	-g 	@angular/cli			{1st time}
+
+	OR
+
+	npm 	install 	-g 	@angular/cli@latest		{Update}
+
+	Verify:	ng	--version
+
+4.Visual Studio Code:
+
+	IDE for preparing  angular applications
+
+
+8.First application:(Without IDE)
+=============================
+
+step1: create a folder & open cmd prompt in current folder	(other than c: drive)
+step2:creating angular project
+	syntax:
+		ng	new	<applicationame>
+
+step3:choose 	1.css type 	2.routing required or not
+
+step4:enter into ur project folder
+	syntax:
+		cd	<applicationame>
+
+step5:run the empty project
+	command:
+		
+		ng	serve	-o
+		Or
+		npm	start
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
