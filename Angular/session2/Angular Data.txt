@@ -1,0 +1,75 @@
+Day2:
+--------
+8.First application:(Without IDE)
+=============================
+
+step1: create a folder & open cmd prompt in current folder	(other than c: drive)
+step2:creating angular project
+	syntax:
+		ng	new	<applicationame>
+
+step3:choose 	1.routing required or not (type 'n')	2.css type (select 1st one)	
+
+step4:enter into ur project folder
+	syntax:
+		cd	<applicationame>
+
+step5:run the empty project
+	command:
+		
+		ng	serve	-o
+		Or
+		npm	start
+		
+	The --open (or just -o) option automatically opens your browser to http://localhost:4200/.
+
+Type ctrl+c to stop debugging
+
+Note:
+--------
+	Online IDE for angular :	https://stackblitz.com
+
+9.First application:(With IDE):
+==========================
+
+step1:Open VSC
+
+step2:File->Open Folder->Select Ur folder->Open
+
+step3:In menu bar select Terminal ->New Terminal
+3.1 Type:
+	ng	new	app2
+	1.routing required or not (type 'n')	2.css type (select 1st one)
+3.2 File->Open Folder->select app2
+
+step4:Opne terminal again, To run
+	ng	serve	-o
+
+step5:stop debugging
+
+	ctrl+c
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
