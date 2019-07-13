@@ -1,0 +1,19 @@
+DATA BINDING:
+==============
+Data binding is a relation between component and template
+
+When the value of component is changed   the template will be changed automatically
+When the value of template is changed the component will be changed automatically
+
+Data binding 2 types
+I.One way binding:
+---------------------------
+	1. Interpolation binding	:	{{}}
+	2. Property binding		:	[] or bind
+	3. Event binding 		:	() or on
+	4.Style binding
+
+II. Two way binding:
+----------------------------
+	Ur name is:{{myname}}
+https://cdn.images.express.co.uk/img/dynamic/68/590x/tendulkar-366848.jpg
