@@ -1,0 +1,45 @@
+DATA BINDING:
+==============
+Data binding is a relation between component and template
+
+When the value of component is changed   the template will be changed automatically
+When the value of template is changed the component will be changed automatically
+
+Data binding 2 types
+I.One way binding:
+-------------------------
+Def:
+	When the value of component is changed   the template will be changed
+
+One way binding is achieved by 4 ways
+
+	1. Interpolation binding	:	{{}}		Refer App1
+	2. Property binding		:	[] or bind		Refer App1
+	3. Event binding 		:	() or on		Refer App1
+
+	4.Style binding		:	Refer App2
+
+		Style binding can be done in 3 ways:
+			1.property binding	(class,style)
+			2.using ngStyle directive
+			3.using ngClass directive
+
+II.Two way binding:		Refer App3
+--------------------------
+Def:
+	When the value of component is changed   the template will be changed  & vise versa.
+
+Two way binding is achieved by using "ngModule" directive.
+Two way binding is represented in banana in a box symbol :	[(ngModel)]
+ngModel directive is defined in @angular/forms package,so we have to import it before use.
+Two way binding is applicable for
+	1.All <input> tags
+	2.<select> tag
+	3.<textarea> tag
+
+
+
+
+
+
+	
