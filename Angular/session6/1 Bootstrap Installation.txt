@@ -1,0 +1,18 @@
+Installation of bootstrap:
+=====================
+Step1:Open terminal & type following command
+
+	npm	install	-g	bootstrap jquery popper
+
+after installation 3 dependices refresh the current project
+
+Step2:open angular.json and goto 26 line and here we can have only global or public styles.css declaration.
+make sure that we have to copy bootstrap link here 
+
+step 3:open node_modules folder and copy the bootstrap relative path and paste into step2 line:26 
+
+	"styles":['src/styles.css','node_modules\\bootstrap\\dist\\css\\bootstrap.min.css']
+
+
+
+	

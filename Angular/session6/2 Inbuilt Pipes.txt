@@ -1,0 +1,77 @@
+Points to remember:
+-----------------------------
+-> Transforms the values into user expected format
+->Invoked by interpolation binding through pipe(|) symbol
+Syntax:
+	{{property	|	pipename}}
+List:
+-----
+	1.uppercase
+	2.lowercase
+	3.number
+	4.currency
+	5.percent
+	6.date
+	7.json
+	8.slice
+============================================================================
+Program:
+--------------
+1.app.component.ts
+
+export class AppComponent
+{
+  city:string='Hyderabad';
+  salary:number=45000.75    ;
+  per:number=0.25;
+  person:object={name:'ajay',age:'22'};
+  dt:Date=new Date();
+}
+
+template:`<div class='c'>
+          City in lowercase:{{city|lowercase}}    <hr>
+          City in uppercase:{{city|uppercase}}    <hr>
+          Slice:{{city|slice: 2:6}}               <hr>
+          Number:{{salary|number}}                <hr>
+          Number:{{salary|number:'.3'}}           <hr>
+          Currency:{{salary|currency:'USD'}}      <hr>
+          Currency:{{salary|currency:'EUR'}}      <hr>
+          Percent:{{per|percent}}                 <hr>
+          JSON:{{person|json}}                    <hr>
+          Short Date:{{dt|date:'shortDate'}}      <hr>
+          Medium Date:{{dt|date:'mediumDate'}}      <hr>
+          Long Date:{{dt|date:'longDate'}}      <hr>
+          Short Time:{{dt|date:'shortTime'}}      <hr>
+          Long Time:{{dt|date:'longTime'}}      <hr>
+          Short:{{dt|date:'short'}}      <hr>
+          Medium:{{dt|date:'medium'}}      <hr>
+          d/M/y:{{dt|date:'d/M/y'}}      <hr>
+          d-M-y:{{dt|date:'d-M-y'}}      <hr>
+          h:m:s :{{dt|date:'h:m:s'}}      <hr>
+  </div>`,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

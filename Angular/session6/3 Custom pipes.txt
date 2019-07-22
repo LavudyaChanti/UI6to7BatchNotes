@@ -1,0 +1,52 @@
+Points to remember:
+-----------------------------
+->It must be a class with @Pipe decorator & implements 'PipeTransfom' interface
+->PipeTransfom interface methodname: transform()
+->transform() automatically executes when pipe invoked
+->transform() receive input as argument & do process then return result
+============================================================================
+Program:
+--------------
+Step1:
+	ng 	g 	pipe 	mypipe
+
+1.app.component.ts
+
+export class AppComponent
+{
+  x:number=10;
+}
+
+ template:`<div>
+        		Cube is:{{x|mypipe}}
+  	</div>`,
+
+2.mypipe.pipe.ts
+
+	 transform(value: any, args?: any): any
+  	{
+    		return (value*value*value);
+  	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
