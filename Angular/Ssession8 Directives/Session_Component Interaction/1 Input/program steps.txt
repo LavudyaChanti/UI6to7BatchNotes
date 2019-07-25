@@ -1,0 +1,119 @@
+Points to remember:
+-----------------------------
+1.Import input
+	import	{Input} from '@angular/core';
+2.Create data in parent property at parent component
+	class	PC
+	{
+		parentproperty:type;
+	}
+3.Pass data from parent property to child property
+	<child [childproperty]='parentproperty'>
+	</child>
+4.Retrive data into child property at child component
+	class	CC
+	{
+		@Input() childproperty:type;
+	}
+============================================================================
+Program:
+
+Step1:
+----------
+	ng	g	c	company
+	ng	g	c	employee
+
+Step2:styles.css
+-------------------------
+.c1
+{
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+}
+.c2
+{
+    background-color: pink;
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+}
+
+step3:
+---------
+app.component.ts
+	selector: 'app-root',
+app.component.html
+	<div>
+    		<h1>Sharing data from parent to child component</h1>
+    		<app-company></app-company>
+	</div>
+
+step4:
+---------
+company.component.ts
+	selector: 'app-company',
+
+	class AC
+	{
+		phone:string='9849098491';
+	}
+company.component.html
+	<div class="c1">
+  		<h1>Company component(Parent)</h1>
+  		<app-employee [x]='phone'></app-employee>
+	</div>
+
+step5:
+---------
+employee.component.ts
+	import { Input } from '@angular/core';
+	selector: 'app-employee',
+	class	AC
+	{
+		 @Input() x:string;
+	}
+
+employee.component.html
+
+	<div class="c2">
+  		<h1>Employee component(Child)</h1>
+  		<p>Company phone number is:{{x}}</p>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,137 @@
+Points to remember:
+-----------------------------
+1.Import ViewChild
+	import	{  ViewChild  } from '@angular/core';
+2.Create a ViewChild property
+	class	PC
+	{
+		@ViewChild(ClassName) propertyname:classname; 
+	}
+3.Access properties/methods of the child element, using ViewChild's property
+	this.propertyname.property
+	this.propertyname.methodname()
+
+
+
+
+
+=======================================================================================
+Step1:
+----------
+	ng	g	c	company
+	ng	g	c	employee
+
+Step2:styles.css
+-------------------------
+.c1
+{
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+}
+.c2
+{
+    background-color: pink;
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+}
+.c
+{
+    background-color: silver;
+    margin: 10px;
+    padding: 10px;
+    height: 400px;
+}
+step3:
+---------
+app.component.ts
+
+	selector: 'app-root',
+
+app.component.html
+
+<div class="c">
+    <h1>Root Component</h1>
+    <app-company></app-company>
+</div>
+
+step4:
+---------
+company.component.ts
+
+	import { EmployeeComponent } from '../employee/employee.component';
+
+	selector: 'app-company',
+
+companyname:string='Tallgrass';
+  @ViewChild(EmployeeComponent) emp:EmployeeComponent;
+  dowork1()
+  {
+    console.log(this.emp);
+    this.emp.empname='Chanti';
+  }
+
+
+company.component.html
+
+<div class="c1">
+  <h1>Company component(Parent)</h1>
+  {{companyname}}<br>
+  <input type="button" value="click me" (click)='dowork1()'>
+  <app-employee></app-employee>
+</div>
+
+step5:
+---------
+employee.component.ts
+	import { Input } from '@angular/core';
+
+	selector: 'app-employee',
+
+	 empname:string='John';
+
+employee.component.html
+
+	
+<div class="c2">
+  <h1>Employee component(Child)</h1>
+  <p>{{empname}}</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
