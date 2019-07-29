@@ -1,0 +1,71 @@
+Validations using Validatiors  class:
+=============================
+We can do custom form validations using Validatiors class from @angular/forms package.
+syntax:
+-----------
+	Validators.validationname
+Ex1:
+	Validators.required
+	
+Ex2:
+	Validators.minlength=5
+Ex3:
+	Validators.maxlength=5
+
+We can also do validations using regular expressions using Validatiors  class.
+
+syntax:
+	Validatiors.pattern("UR PATTERN");
+
+Refer for regular expressions:
+=========================
+A Regular Expression (RegEx) is a sequence of characters that defines a search pattern.
+Few operators:
+
+^
+$
++
+.
+*
+-
+[]
+{}
+/
+\
+
+https://www.programiz.com/python-programming/regex
+
+
+Example:
+-------------
+https://www.concretepage.com/angular-2/angular-2-4-pattern-validation-example
+
+______________________________________________________________________________
+
+Services in Angular:
++++++++++++++++++
+
+Services in Angular 7 allow you to define code that's accessible and reusable throughout 
+multiple components. 
+
+A common use case for services is when you need to communicate with a backend of some 
+sort to send and receive data.
+
+syntax:
+---------
+	 ng 	g	s		<servicename>
+ex:
+-----
+	 ng 	g	s		mysevice1
+
+
+
+
+
+
+
+
+
+
+
+

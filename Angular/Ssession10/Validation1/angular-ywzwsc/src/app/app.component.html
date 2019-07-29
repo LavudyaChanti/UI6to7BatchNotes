@@ -1,0 +1,25 @@
+ <div>
+   <h1>Form Validation</h1>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+
+ Full Name  
+    <input type="text" formControlName="fullName">    
+    <div style="color:red"
+          *ngIf="((myForm.get('fullName').touched ||
+                   myForm.get('fullName').dirty) &&
+                   myForm.get('fullName').errors)">
+      <div *ngIf="myForm.get('fullName').errors.required">
+        Full Name is required
+      </div>
+      <div *ngIf="myForm.get('fullName').errors.minlength ||
+                   myForm.get('fullName').errors.maxlength">
+          Must be > 2 characters and < 8 characters
+      </div>
+    </div>
+  <br>
+
+
+  <button type="submit">Save</button>
+</form>
+</div>
+
