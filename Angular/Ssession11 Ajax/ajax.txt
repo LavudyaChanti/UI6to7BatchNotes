@@ -1,0 +1,49 @@
+			API(Collection of Data in XML/JSON/TABLE/TEXT,..)
+JSON data:
+---------------
+gmailusers:object=[
+{
+'firstname':'chanti',
+'lastname':'lavudya',
+'username':'chanti123@gmail.com',
+'pswd':'9849098490',
+},
+{
+'firstname':'arun',
+'lastname':'vasava',
+'username':'arn44@gmail.com',
+'pswd':'9849098491',
+},
+
+1000000000
+]
+
+
+gmail.json
+
+
+
+Ajax operations:
+------------------------
+
+get	:reading records from API
+post	:inserting record/saving details first time into API
+put	:updating existing records with in API
+delete	:deleting existing records with in API
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
