@@ -1,0 +1,184 @@
+Data Storage Ways:
+=================
+1.Temparory Storage:
+------------------------------
+1.1.Variables		
+Ex:
+	int	id=501;
+	String	name="Ajay";
+	float	salary=45000;
+1.2.Objects
+Ex:
+	class	Emp
+	{
+		int	id;
+		String	name;
+		float	salary;
+	}
+	Emp	e1=new	Emp(501,"Ajay",45000);
+	Emp	e2=new	Emp(502,"Sanjay",35000);
+
+2.Permnant Storage:
+-----------------------------
+2.1.Files
+Ex:	emp.txt	(Text File)
+	
+	id	name	salary		=>Metadata	(Data About Data)
+
+	501	Ajay	45000		=>Data
+	502	Sanjay	35000
+	501	Ajay	45000
+	503		45000
+	Varun	25000	504
+	
+
+
+Drawbacks with File System:
+________________________
+	(-) Meta cannot be maintained
+	(-)Duplication is allowed
+	(-)Null insertion is allowed
+	(-)Relationship between files cannot be maintained
+	(-)Huge data cannot be maintained
+	(-)No security
+	(-)No recovery
+	(-)Retrival or modification is very complex
+	(-)Only work with structured data(text)
+	
+To overcome all above drawbacks with file system,The ANSI introduced DataBase in 1960.
+
+	
+2.2 Databases:
+--------------------
+Def:	Stores interrelated data in tabular format
+
+Advantages with Database System:
+______________________________
+	(-) Meta can be maintained
+	(-)"Unique constraint" cannot allow Duplication of rows
+	(-)"Not Null constraint" cannot allow null values
+	(-)Relationship between tables can be maintained by "Foreign Key constraint"
+	(-)Huge data can be maintained in gbs,tbs,...
+	(-)Have security  in different levels(Authentication)
+	(-)Have recovery using "rollback & savepoint commands"
+	(-)Retrival or modification is very simple by passing a single query to database
+	(-)Work with structured data(text) & unstructured data(text,image,video,....)
+
+Databases Terms:
+-------------------------
+	1.Data and Cell
+	2.Table & It's schema
+	3.Relational DataBase
+	4.DataBase Server
+	5.DBMS
+	6.SQL & PLSQL
+	7.Database Types
+
+1.Data & Cell:
+_____________
+	Data is a raw fact & it can be like 501 or Ajay ,...........
+
+	Cell is a memory to store data	
+		Or
+	One intersection of row & coulmn is called as Cell
+
+2.Table & It's schema:
+___________________
+Table:	Collection of rows & coulmns		Or
+	Collection of records & fields		Or
+	Stores interrelated data in Cells
+Schema:
+	Schema defines structure for table
+
+Ex1:Emp table schema
+
+	Table Name		:	Employee
+	Table Columns Name	:	id,	name,	salary
+	Table Columns Type		:	int,	varchar,	float
+
+3.Relational  DataBase:
+____________________
+	Collection of tables is called as DataBase
+Ex1:
+	emp database consist
+
+		cseemp table
+		eeeemp table
+		mechemp table
+4.DataBase Server:
+_________________
+	Collection of Databases is called as DataBase Server
+Example:
+	1.Oracle database server given by Oracle corporation
+	2.MySQL database server given by Oracle corporation
+	3.MSSQL database server given by MicroSoft corporation
+	4.IBM DB2 database server given by IBM corporation
+
+5.DBMS:(Database Management System)
+________
+	DBMS is a software which manages the database by performing following CRUD operations.
+	
+	C	->	Creating database,tables & inserting records
+	R	->	Read/Retrive/Select database tables records
+	U	->	Updating database tables records
+	D	->	Deleting database tables records
+
+	To perform these CRUD operations we require a language Called as SQL.
+
+
+6.SQL & PLSQL:(Structured Query Language, Procedural Language + SQL)
+_______________
+SQL is used to perform CRUD operations with any databases using following 5 types of Languages
+
+
+	LANGUAGE			COMMANDS
+	__________			___________
+1.Data Definition Language(DDL)		:Drop,Rename,Create,Alter,Truncate
+2.Data Manipulation Language(DML)		:Update,Delete,Insert
+3.Data Control Language(DCL)			:grant,revoke
+4.Data Transaction Language(DTL)		:commit,rollback,savepoint
+5.Query Language(QL)			:select
+
+
+7.Database Types:-
+________________
+Types:
+
+SQL databases	
+	:called as Relational Databases 
+	:table based
+	:follows static schema
+
+	Example	:Oracle,MySql,MS SQL,IBM DB2,....
+
+NoSQL databases	
+	:called as non-relational 	
+	:document based(JSON->{Key,Value})
+	:follows dynamic schema
+
+	Example	:MongoDb,Hbase,Cassendra,CouchDb...
+
+Terminology and Concepts:
+========================
+Many concepts in MySQL have close analogs in MongoDB.
+The table below outlines the common concepts across MySQL and MongoDB.
+
+	MySQL			MongoDB
+	______			________
+	ACID Transactions		ACID Transactions
+	Table			Collection
+	Row			Document
+	Column			Field
+	
+
+
+
+
+
+
+
+
+
+
+
+

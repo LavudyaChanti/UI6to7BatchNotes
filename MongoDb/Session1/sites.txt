@@ -1,0 +1,12 @@
+https://www.mongodb.com/what-is-mongodb
+
+https://docs.mongodb.com/manual/tutorial/getting-started/
+
+
+https://docs.mongodb.com/manual/
+
+https://www.mongodb.com/compare/mongodb-mysql
+
+https://docs.mongodb.com/manual/crud/
+
+https://docs.mongodb.com/manual/tutorial/getting-started/
