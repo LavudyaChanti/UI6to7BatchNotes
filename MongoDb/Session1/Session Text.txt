@@ -54,9 +54,9 @@ Def:	Stores interrelated data in tabular format
 
 Advantages with Database System:
 ______________________________
-	(-) Meta can be maintained
-	(-)"Unique constraint" cannot allow Duplication of rows
-	(-)"Not Null constraint" cannot allow null values
+	(+) Meta can be maintained
+	(+)"Unique constraint" cannot allow Duplication of rows
+	(+)"Not Null constraint" cannot allow null values
 	(-)Relationship between tables can be maintained by "Foreign Key constraint"
 	(-)Huge data can be maintained in gbs,tbs,...
 	(-)Have security  in different levels(Authentication)
